@@ -17,7 +17,7 @@ const AddTask = ({ cards, setCards }: AddTaskProps) => {
         ...cards,
         [0]: [
           ...cards[0],
-          { id: Math.floor(Math.random() * 1000), title: value },
+          { id: Math.random().toString(16).slice(2), title: value },
         ],
       };
       setCards(newCards);

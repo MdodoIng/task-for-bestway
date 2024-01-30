@@ -1,20 +1,29 @@
 import { Columns, cardSate } from "../type";
+import { LoremIpsum } from "lorem-ipsum";
+
+const lorem = new LoremIpsum({
+
+  wordsPerSentence: {
+    max: 2,
+    min: 1
+  }
+});
 
 export const initialTask: cardSate = {
   [Columns.IN_PROGRESS]: [
     {
-      id: "FYI-567",
-      title: "Make a video about view transitions",
+      id: Math.random().toString(16).slice(2),
+      title: lorem.generateSentences(5),
     },
     {
-      id: "FYI-09",
-      title: "Take a break",
+      id: Math.random().toString(16).slice(2),
+      title: lorem.generateSentences(5),
     },
   ],
   [Columns.DONE]: [
     {
-      id: "FYI-230",
-      title: "Tweet about blog form content for fe.fyi",
+      id: Math.random().toString(16).slice(2),
+      title: lorem.generateSentences(5),
     },
   ],
 };
