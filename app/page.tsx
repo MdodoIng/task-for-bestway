@@ -42,7 +42,7 @@ export default function Home() {
     }
   };
   return (
-    <main className="bg-black h-screen flex items-center justify-center py-[10vh]">
+    <main className="bg-gray-900 h-screen flex items-center justify-center py-[10vh]">
       <div className="grid grid-cols-3 max-w-[900px] gap-4 h-full">
         <AddTask cards={cards} setCards={setCards} />
         {/* @ts-ignore */}
