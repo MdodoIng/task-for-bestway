@@ -2,11 +2,10 @@ import { Columns, cardSate } from "../type";
 import { LoremIpsum } from "lorem-ipsum";
 
 const lorem = new LoremIpsum({
-
   wordsPerSentence: {
     max: 2,
-    min: 1
-  }
+    min: 1,
+  },
 });
 
 export const initialTask: cardSate = {
