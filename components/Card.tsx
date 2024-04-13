@@ -17,7 +17,6 @@ const Card = ({ title, id }: CardProps) => {
       onDragEnd={() => setDraggingCard(null)}
       style={{ viewTransitionName: `card-${id}` }}
       className="cursor-grab rounded-md bg-gray-900 p-3 shadow-md active:animate-pulse active:cursor-grabbing"
-      
     >
       <p>{title}</p>
     </div>
